@@ -1,0 +1,40 @@
+(1.1) Home directory
+/home/accounts/student/i/ia005
+(1.2) -a
+Prints all the file and directory names including hidden files in the present working directory.
+(1.3) -l
+Prints more information about files and directories in a present working directory such as the date and modification time, permissions and owner.
+(1.4) ls -clt
+It sorts it with the newest file listed first.
+(1.5) ls -cltr
+(1.6) ls -S
+(1.7) [ia005@linuxremote1 ~]$ ls -lR csci205
+csci205:
+total 4
+drwx--x--x 3 ia005 student 4096 Aug 24 11:03 src
+
+csci205/src:
+total 4
+drwx--x--x 2 ia005 student 4096 Aug 24 14:42 lab01
+
+csci205/src/lab01:
+total 8
+-rw------- 1 ia005 student 408 Aug 24 14:42 answers.txt
+-rw------- 1 ia005 student 408 Aug 24 14:42 answers.txt~
+
+(2.1) A version control system is a type of system that keeps track of changes in files and allows for retrieval of different versions of these files.
+(2.2)
+i. Local Version Control Systems: This would be useful to a single programmer working on a project and has no network access since it's simple and present on the programmer's hard disk.
+ii. Centralized Version Control Systems: This would be useful to a group of programmers working on a project. Each of them would be able to access all versions of the project from a remote  server. 
+iii. Distributed Version Control Systems: This would be useful to a group of programmers without ample access to a centralized server.
+(2.3) Distributed Version Control System(DVCS)
+(2.4)Performing operations in Git locally means Git doesn't depend heavily on remote servers. It is able to access the local hard disk for information it needs to generate the right version it is asked.
+i. Network connection not required to access versions of project.
+ii. Network connection not required to do extra work on project.
+(2.5)Git thinks of its objects as a set of snapshots of a filesystem. Once an object is committed, a snapshot is taken of the object. A reference is created to each snapshot. 
+(2.6) The three states a file can be include the modified state, the staged state and the committed state.
+In the modified state, the user makes changes to a file but this changes are not saved yet and are not accessible to other users. It's present only on the user'slocal directory.
+In the staged state, a file is in the staging area and has been selected to be added to the database of the Git directory(committed).
+In the committed state, the changed version of the file is stored in the database of the Git directory and can be accessed by everyone on the project.
+
+
