@@ -1,0 +1,14 @@
+/***************************************************************************************************
+ *CSCI205 - Software Engineering and Design
+ *Fall 2015
+ *Instructor: Evan Peck
+ *Section: 8am
+ *
+ *Name: Dunni Adenuga
+ *Date: 25/08/2015
+ *
+ *Lab/Assignment: Lab 01
+ *
+ *Description:Introduction to Git and Java.
+ *
+ ****************************************************************************************************/
