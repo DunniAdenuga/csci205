@@ -19,8 +19,10 @@ public class Hello
 {
 	public static void main(String[] args)
 	{
+		double initialTime = System.nanoTime();
 		System.out.println("Programming is not a spectator sport!!");
-		System.exit(0);
+		double finalTime = System.nanoTime();
+		System.out.println(finalTime - initialTime + " ns");
 	}
 
 }

@@ -71,3 +71,13 @@ ii. Compile the code with a compiler e.g javac
 	$javac packageName/MyProgram.java
 iii. Run the bytecode created(without the .java extension).
 	$java packageName.MyProgram
+
+(4.1) 
+public void println(String x)
+Prints a String and then terminate the line. This method behaves as though it invokes print(String) and then println().
+Parameters:
+x - The String to be printed.
+(4.2)standard input stream: in
+     type: InputStream
+
+																																																																																																																																
