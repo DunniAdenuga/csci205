@@ -22,7 +22,7 @@ public class Hello
 		double initialTime = System.nanoTime();
 		System.out.println("Programming is not a spectator sport!!");
 		double finalTime = System.nanoTime();
-		System.out.println(finalTime - initialTime + " ns");
+		System.out.println("Time to execute: " + (finalTime - initialTime)/1000000 + " ms");
 	}
 
 }
