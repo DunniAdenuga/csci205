@@ -52,4 +52,22 @@ In the modified state, the user makes changes to a file but this changes are not
 In the staged state, a file is in the staging area and has been selected to be added to the database of the Git directory(committed).
 In the committed state, the changed version of the file is stored in the database of the Git directory and can be accessed by everyone on the project.
 
-
+(3.1) Bytecodes is the machine language of the Java Virtual Machine. It is generated when a java compiler compiles the java source code written in an editor by a programmer.
+(3.2) A benefit is portabity(write once, run anywhere).
+(3.3) Using the JVM means the program runs a little slower than executing the code directly on the hardware.
+(3.4)I believe most of it.
+i. Learning of a new programming language is pretty easy with fore-knowledge of other programming languages. It's even better if it's C or C++ because they have similar layout and Java was developed from C.
+ii. Compared to C++, Java may require less code but compared to another high level language, Python, this is not the case.
+iii. The concept of reusable code is phenomenal and so, makes writing code better since I can use for example, a class from a previous program that performs a function I require in my new program.
+iv. While Java may allow devoloping code quickly compared to C++, it doesn't mean the code runs faster.
+v. Avoiding platform dependency is good because it means a wider range of audience is reached without much work.
+vi. Once JVM is present on a computer, any java code written from any platform can be run on a such a computer.
+vii. If the Web Start software does what's wriitten above, then software distribution is indeed easy.
+(3.5)i. /*text*/
+     ii. /**documentation */
+     iii. //text
+(3.6)i. Make sure MyProgram.java is in the directory with the same name as the name of the package in the program.
+ii. Compile the code with a compiler e.g javac
+	$javac packageName/MyProgram.java
+iii. Run the bytecode created(without the .java extension).
+	$java packageName.MyProgram
