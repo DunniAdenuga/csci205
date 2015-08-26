@@ -80,4 +80,20 @@ x - The String to be printed.
 (4.2)standard input stream: in
      type: InputStream
 
-																																																																																																																																
+(5.1)In java, the data type of the result of a numerical expression is dependent on the data type of the operands. In this snippet, the data type is integer so,the decimal portion of the result is cut off and the integer portion returned as the final result.
+(5.2) My output is 1.0.
+In java, the data type of the answer is dependent on the data type of the operands. Since the data types of x and y is int. The answer is returned as an integer(1) but since this integer would be stored in a "double" variable, the answer(1) would be returned as a double (1.0) .
+
+(6.1) The args variable is a String array with elements and this elements are initialized to command line arguments.
+(6.2) shows the method would not be returning anything.
+(6.3)An identifier is any word used to represent a variable, method or class.
+i. Should not be same as any java keyword.
+ii. Can contain a lower case or upper case letter, numbers, underscore and the dollar sign.
+iii. Can't start with a number.
+iv. Can be any length.
+(6.4) A keyword is a special word with a special meaning in java. 
+(6.5) A float and double variable store decimal numbers. A double variable can have twice as much significant digits as a float variable.
+(6.6) byte, short, int, and long variables store integers. byte stores in 1 byte. short stores in 2 bytes. int stores in 4 bytes. long stores in 8 bytes. 
+(6.7) No. String data type is a class.
+(6.8) String name = "Dunni Adenuga";
+(6.9) Scope of a variable means the lifetime of a variable. The variable meaning is limited to within the curly brackets where the variable is initialized. 																																																																																																																													
