@@ -1,4 +1,15 @@
-/**
+/*****************************************************************************************************
+ *CSCI205 - Software Engineering and Design
+ *Fall 2015
+ *Instructor: Evan Peck
+ *Section: 8am
+ *
+ *Name: Dunni Adenuga
+ *Date: 25/08/2015
+ *
+ *Lab/Assignment: Lab 02
+ *
+ *Description:
  * The following is a simple program to illustrate differences between the
  * primitive types, and use the wrapper classes to gain some information about
  * those types
