@@ -23,6 +23,8 @@ public class FtoC {
 	public static void main(String[] args) {
 		double fahTemp;
 		double celTemp;
+		String tryAgain; 
+		do{
 		// Prompt user for a Fahrenheit temp
 		System.out.print("Enter a temperature in Fahrenheit: ");
 
@@ -34,11 +36,32 @@ public class FtoC {
 
 		// Convert the temp to Celsius
 		celTemp = ((fahTemp - 32)* 5)/9;
-		//System.out.println(celTemp);
 
 		// Output the results with correct formatting
 		System.out.printf("%.0f F" + " = " + "%.1f C", fahTemp, celTemp);
-
+		System.out.println();
+		if(celTemp <= 0)
+		{
+		System.out.println("Brrr... it is FREEZING out !");
+		}
+		else if(celTemp > 0 && celTemp <= 15)
+		{
+		System.out.println("It's a bit cool out");
+		}
+		else if(celTemp > 15 && celTemp <= 30)
+		{
+		System.out.println("It's comfortably warm");
+		}	
+		else
+		{
+		System.out.println("It's HOT! I need A/C!");
+		}
+		System.out.print("Try again? [y | n]:");
+		tryAgain = in.next();
+		}while((tryAgain.equalsIgnoreCase("y")) == true);
+		System.out.println("Goodbye!");
+		
+		
 	}
 }
 
