@@ -1,0 +1,62 @@
+/***************************************************************************************************
+ *CSCI205 - Software Engineering and Design
+ *Fall 2015
+ *Instructor: Evan Peck
+ *Section: 8am
+ *
+ *Name: Dunni Adenuga
+ *Date: 31/08/2015
+ *
+ *Lab/Assignment: Lab 03
+ *
+ *Description: Methods, and the String Class
+ *
+ ****************************************************************************************************/
+Q1.
+$  git log --oneline --decorate
+c803c5a (HEAD, master) More Work
+19656c7 Init Commit
+
+Q2.
+$  git log --oneline --decorate
+c803c5a (HEAD, myFeature, master) More Work
+19656c7 Init Commit
+
+Q3.
+$  git log --oneline --decorate
+6004277 (HEAD, myFeature) test2
+069c74b test1
+c803c5a (master) More Work
+19656c7 Init Commit
+
+Q4.
+$ git diff master
+diff --git a/Main.java b/Main.java
+index a4d3b54..609e92a 100644
+--- a/Main.java
++++ b/Main.java
+@@ -4,6 +4,7 @@ public static void main(String[] args)
+ {
+ System.out.println("Init commit");
+ System.out.println("More Work");
+-
++System.out.println("Git is gitty");
++System.out.println("Bro! What's up");
+ }
+ }
+
+Q5.
+$ git log --oneline --decorate --all
+6004277 (myFeature) test2
+069c74b test1
+c803c5a (HEAD, master) More Work
+19656c7 Init Commit
+
+Q6.
+$ git log --oneline --decorate --all
+6004277 (HEAD, myFeature, master) test2
+069c74b test1
+c803c5a More Work
+19656c7 Init Commit
+
+
