@@ -75,3 +75,16 @@ Non-Recursive:0 ms
 
 I could only go as far as the 10500 th number after which(from 11000), I started getting stack overflow errors.
 The recursive function is more computationally expensive because it requires more stack space, more memory to store and keep track of all the versions of the program open. This causes it to require more time to run. 
+
+Exercise 5
+(1.1) 8
+(1.2) 13
+(1.3) HelloCSCI 205
+(1.4) llo
+(1.5) true
+(1.6) 2
+(1.7) 7
+(1.8) HELLO
+(1.9) CSCI200
+(1.10) They are the same.
+
