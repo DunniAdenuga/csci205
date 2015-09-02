@@ -59,4 +59,19 @@ $ git log --oneline --decorate --all
 c803c5a More Work
 19656c7 Init Commit
 
+Exercise 4.2
 
+20th
+Recursive: 2 ms
+Non-Recursive: 0 ms
+
+30th
+Recursive: 31 ms
+Non-Recursive: 0 ms
+
+40th
+Recursive:787 ms
+Non-Recursive:0 ms
+
+I could only go as far as the 10500 th number after which(from 11000), I started getting stack overflow errors.
+The recursive function is more computationally expensive because it requires more stack space, more memory to store and keep track of all the versions of the program open. This causes it to require more time to run. 
