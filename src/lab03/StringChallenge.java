@@ -110,24 +110,23 @@ public class StringChallenge {
 	int answer = 0;
 	String a = "";
 	String b = " ";
+	int x = 0;
+	int temp;
 	while(i+1 < s.length())
 {
 	if (Character.isDigit(s.charAt(i)))
 		{
-		if (Character.isDigit(s.charAt(i+1)))
-		 {
 		a = Character.toString(s.charAt(i));
+		temp = i;
+		while (Character.isDigit(s.charAt(i+1)))
+		{
 		b = Character.toString(s.charAt(i+1));
 		a = a + b;
-		answer = answer + Integer.parseInt(a);
-		i = i + 2;
-		  }
-		else
-		  {
-		a = Character.toString(s.charAt(i));
-		answer = answer + Integer.parseInt(a);
 		i++;
-		  }
+		 }
+		answer = answer + Integer.parseInt(a);
+		if ((Character.isDigit(s.charAt(i)) && Character.isDigit(s.charAt(i+1))) == false)
+			i++;
 		}
 	else
 		i++;
