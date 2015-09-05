@@ -33,6 +33,8 @@ array2)));
  System.out.printf("sorted test 2: %b\n", isSorted(array2));
 }
 
+/**************************************************************/
+
 public static double[] concat(double[] a1, double[] a2)
 {
 double[] answer = new double[a1.length + a2.length];
@@ -45,6 +47,7 @@ for(int i = a1.length; i < a1.length + a2.length; i++)
 	}
 return answer;
 }
+/***************************************************************/
 
 static int i =0;
 static int counter = 1;
