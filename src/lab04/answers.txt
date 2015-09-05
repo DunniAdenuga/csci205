@@ -1,0 +1,85 @@
+/***************************************************************************************************
+ *CSCI205 - Software Engineering and Design
+ *Fall 2015
+ *Instructor: Evan Peck
+ *Section: 8am
+ *
+ *Name: Dunni Adenuga
+ *Date: 04/09/2015
+ *
+ *Lab/Assignment: Lab 04
+ *
+ *Description:Arrays; switch.
+ *
+ ****************************************************************************************************/
+
+Q1.
+
+$ git log --decorate --oneline --all
+6004277 (HEAD, myFeature, master) test2
+069c74b test1
+c803c5a More Work
+19656c7 Init Commit
+
+$ git branch
+* master
+  myFeature
+
+Q2.
+
+$ git log --decorate --oneline --all
+6004277 (myFeature) test2
+069c74b test1
+c803c5a (HEAD, master) More Work
+19656c7 Init Commit
+
+Q3.
+
+$ git log --decorate --oneline --graph --all
+* e272d7c (HEAD, bugFix) Fixed bug
+| * 6004277 (myFeature) test2
+| * 069c74b test1
+|/  
+* c803c5a (master) More Work
+* 19656c7 Init Commit
+
+Q4.
+
+$ git log --graph --all --oneline --decorate
+* e272d7c (HEAD, master, bugFix) Fixed bug
+| * 6004277 (myFeature) test2
+| * 069c74b test1
+|/  
+* c803c5a More Work
+* 19656c7 Init Commit
+
+Q5.
+
+public class Main
+{
+public static void main(String[] args)
+{
+System.out.println("Init commit");
+System.out.println("More Work");
+<<<<<<< HEAD
+System.out.println("Fixed bug");
+=======
+System.out.println("Git is gitty");
+System.out.println("Bro! What's up");
+>>>>>>> myFeature
+}
+}
+
+Q6.
+$ git log --graph --oneline --decorate --all
+*   91d8b7b (HEAD, master) Merged myFeature
+|\  
+| * 6004277 (myFeature) test2
+| * 069c74b test1
+* | e272d7c Fixed bug
+|/  
+* c803c5a More Work
+* 19656c7 Init Commit
+
+
+
