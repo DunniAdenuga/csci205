@@ -17,6 +17,9 @@ import java.util.*;
 
 public class ArrayChallenge 
 {
+/**
+  * Different problems with arrays
+  */
 public static void main(String[] args) 
 {
  double[] array1 = { 2, 3, 5, 7, 11 };
