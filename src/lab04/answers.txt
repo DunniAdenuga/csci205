@@ -81,5 +81,39 @@ $ git log --graph --oneline --decorate --all
 * c803c5a More Work
 * 19656c7 Init Commit
 
+Exercise 3
+
+1.
+ Generating 10000 numbers...
+sd:     1.00937753
+TIME:    3.028055 usec
+alt_sd: 1.00946410
+TIME:    1.460451 usec
+alt_sd computed in 48.23 percent of the time of sd
 
 
+2.
+Generating 100000 numbers...
+sd:     0.99595523
+TIME:    12.00743 usec
+alt_sd: 0.99595938
+TIME:    8.077411 usec
+alt_sd computed in 67.27 percent of the time of sd
+
+3.
+Generating 500000 numbers...
+sd:     0.99907950
+TIME:    29.216995 usec
+alt_sd: 0.99907977
+TIME:    22.624492 usec
+alt_sd computed in 77.44 percent of the time of sd
+
+4.
+Generating 1000000 numbers...
+sd:     1.00059177
+TIME:    51.500533 usec
+alt_sd: 1.00059181
+TIME:    41.806035 usec
+alt_sd computed in 81.18 percent of the time of sd
+
+5. The second approach is faster because it contains just one loop through the array. 
