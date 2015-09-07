@@ -15,6 +15,10 @@
  */
 package lab05;
 
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  * A simple program to aid in understanding NetBeans
  *
@@ -23,12 +27,24 @@ package lab05;
  */
 public class Hello {
 
+    private static final int NUM_INTS = 10;
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Becoming a good programmer takes practice.");
+        System.out.print("Hello! What is your name ? ");
+        Scanner in = new Scanner(System.in);
+        String name = in.next();
+        System.out.println(name + ", becoming a good programmer takes practice.");
+
+        //Some simple code to test the debugger
+        Random rand = new Random();
+        int[] x = new int[NUM_INTS];
+        for (int i = 0; i < NUM_INTS; i++) {
+            x[i] = rand.nextInt(100);
+        }
+        System.out.println(Arrays.toString(x));
     }
 
 }
