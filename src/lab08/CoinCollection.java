@@ -17,11 +17,6 @@ package lab08;
 public class CoinCollection {
 
     /**
-     * An array to store the individual values of each coin
-     */
-    private static final double[] coinValues = {0.05, 0.10, 0.25};
-
-    /**
      * array of integers contains actual count of each coin type in the
      * collection
      */
@@ -82,8 +77,10 @@ public class CoinCollection {
      */
     public double getTotal() {
         double total = 0;
-        for (int i = 0; i < coinValues.length; i++) {
-            total = total + (coinCount[i] * coinValues[i]);
+        int i = 0;
+        for (Coin coin : Coin.values()) {
+            total = total + (coinCount[i] * coin.getValue());
+            i++;
         }
         return total;
     }
