@@ -21,8 +21,17 @@ package lab08;
  * @author Dunni Adenuga
  */
 public enum Coin {
-    NICKEL,
-    DIME,
-    QUARTER;
+    NICKEL(0.05),
+    DIME(0.10),
+    QUARTER(0.25);
 
+    private double valueCoin;
+
+    Coin(double coin) {
+        valueCoin = coin;
+    }
+
+    double getValue() {
+        return valueCoin;
+    }
 }
