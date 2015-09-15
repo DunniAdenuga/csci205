@@ -9,7 +9,7 @@
  * Project: csci205
  * Package: lab08
  * File: Coin
- * Description:
+ * Description:Enum Type
  *
  * ****************************************
  */
@@ -25,12 +25,25 @@ public enum Coin {
     DIME(0.10),
     QUARTER(0.25);
 
+    /**
+     * Value of each enum type
+     */
     private double valueCoin;
 
+    /**
+     * initialize property(value of coin)
+     *
+     * @param coin - value of each coin
+     */
     Coin(double coin) {
         valueCoin = coin;
     }
 
+    /**
+     * Return value of coin
+     *
+     * @return value of coin
+     */
     double getValue() {
         return valueCoin;
     }
