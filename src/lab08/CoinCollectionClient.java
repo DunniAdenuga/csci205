@@ -25,7 +25,6 @@ public class CoinCollectionClient {
     /**
      * Test CoinCollection Class using graphical interface
      *
-     * @param args the command line arguments
      */
     public static void main(String[] args) {
         boolean quit = false;
@@ -109,8 +108,8 @@ public class CoinCollectionClient {
             }
         }
 
-        String finish = new String("You have:");
-        finish = finish + "\n" + myCoins.toString();
+        String finish = new String("You have:\n");
+        finish = finish + myCoins.toString();
         finish = finish + "\n" + "Goodbye!";
 
         JOptionPane.showMessageDialog(null, finish,
