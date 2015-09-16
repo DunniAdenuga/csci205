@@ -96,10 +96,10 @@ public class CoinCollection {
         ray = Coin.values();
         String info = "";
         for (int i = 0; i < ray.length; i++) {
-            info = info + ray[i].name() + ":" + coinCount[i] + " ";
+            info = info + ray[i].name() + ":" + coinCount[i] + "\n ";
         }
 
-        info = info + " = $" + getTotal();
+        info = info + " Total = $" + getTotal();
         return info;
     }
 
