@@ -28,7 +28,7 @@ public enum Coin {
     DOLLAR(1.00);
 
     /**
-     * Value of each enum type
+     * Value of each enumerated type
      */
     private double valueCoin;
 
