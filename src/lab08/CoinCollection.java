@@ -98,8 +98,8 @@ public class CoinCollection {
         for (int i = 0; i < ray.length; i++) {
             info = info + ray[i].name() + ":" + coinCount[i] + "\n ";
         }
-
-        info = info + " Total = $" + getTotal();
+        info = info + String.format("Total = $%.2f", getTotal());
+        //info = info + " Total = $" + getTotal();
         return info;
     }
 
