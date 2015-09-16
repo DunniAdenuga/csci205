@@ -21,9 +21,11 @@ package lab08;
  * @author Dunni Adenuga
  */
 public enum Coin {
+    PENNY(0.01),
     NICKEL(0.05),
     DIME(0.10),
-    QUARTER(0.25);
+    QUARTER(0.25),
+    DOLLAR(1.00);
 
     /**
      * Value of each enum type
