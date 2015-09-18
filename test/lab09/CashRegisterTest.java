@@ -19,6 +19,8 @@ import java.util.LinkedList;
 import java.util.List;
 import org.junit.After;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -169,4 +171,23 @@ public class CashRegisterTest {
         instance.scanItem(1E6);
     }
 
+    /**
+     * Test Equals method of cash Register
+     */
+    @Test
+    public void testEquals() {
+        //
+        CashRegister instance2 = new CashRegister();
+        assertEquals(instance, instance2);
+
+        instance.scanItem(2.50);
+        instance.scanItem(1.00);
+        instance2.scanItem(2.50);
+        instance2.scanItem(1.00);
+        instance.collectPayment(Money.DOLLAR, 4);
+        assertFalse(instance.equals(instance2));
+
+        instance2.collectPayment(Money.DOLLAR, 4);
+        assertTrue(instance.equals(instance2));
+    }
 }
