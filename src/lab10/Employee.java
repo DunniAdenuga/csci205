@@ -32,7 +32,8 @@ import java.util.Date;
  */
 public class Employee {
 
-    private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MMM-dd");
+    private static SimpleDateFormat empDateFormat = new SimpleDateFormat(
+            "yyyy-MM-dd");
 
     private int empID;
     private String firstName;
@@ -116,8 +117,12 @@ public class Employee {
      * @return a <code>Date</code> object
      * @throws ParseException if the string cannot be parse correctly.
      */
-    public static Date parseHireDate(String sDate) throws ParseException {
-        return df.parse(sDate);
+    public static Date strToDate(String sDate) throws ParseException {
+        return empDateFormat.parse(sDate);
+    }
+
+    public static String dateToStr(Date date) {
+        return empDateFormat.format(date);
     }
 
     /**
@@ -129,7 +134,7 @@ public class Employee {
     public String toString() {
         String s = this.empID + "," + this.lastName + "," + this.firstName;
         s += String.format(",%09d", this.ssNum);
-        s += "," + df.format(this.hireDate);
+        s += "," + dateToStr(this.hireDate);
         s += String.format(",%.2f", this.salary);
         return s;
     }
