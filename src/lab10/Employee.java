@@ -157,4 +157,20 @@ public class Employee {
         s += String.format(",%.2f", this.salary);
         return s;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Employee other = (Employee) obj;
+        if (this.ssNum != other.ssNum) {
+            return false;
+        }
+        return true;
+    }
+
 }
