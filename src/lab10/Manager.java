@@ -15,7 +15,20 @@
  */
 package lab10;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
+/**
+ * Checked exception representing any issues that might arise from the Manager
+ * class
+ *
+ */
+class ManagerException extends Exception {
+    public ManagerException(String message) {
+        super(message);
+    }
+}
 
 enum DeptType {
     ENGINEERING,
@@ -30,6 +43,10 @@ public class Manager extends Employee {
      * Department Name
      */
     private DeptType deptName;
+    /**
+     * List of employees managed by Manager
+     */
+    private ArrayList<Employee> empList = new ArrayList<>();
 
     public Manager(int empID, String firstName, String lastName, int ssNum,
                    Date hireDate, double salary, String deptName) {
@@ -71,4 +88,28 @@ public class Manager extends Employee {
 
     }
 
+    /**
+     *
+     * @param emp - Employee to be added to list
+     * @throws ManagerException
+     */
+    public void addEmployee(Employee emp) throws ManagerException {
+        if (empList.contains(emp)) {
+            throw new ManagerException("Employee already exists in List");
+        } else {
+            empList.add(emp);
+        }
+    }
+
+    public List<Employee> getEmpList() {
+        return empList;
+    }
+
+    public void removeEmployee(Employee emp) throws ManagerException {
+        if (empList.contains(emp) == false) {
+            throw new ManagerException("Employee does not exist in List");
+        } else {
+            empList.remove(emp);
+        }
+    }
 }
