@@ -27,28 +27,28 @@ public class HRDBSystem {
     public static void main(String[] args) throws ParseException {
 
         Manager m1 = new Manager(0, "Bayo", "Adenuga", 582964000,
-                                 Employee.strToDate("2013-07-2"),
+                                 HRUtility.strToDate("2013-07-2"),
                                  1000000, "ADMIN");
         Manager m2 = new Manager(1, "Wale", "Adenuga", 582964263,
-                                 Employee.strToDate("2014-07-2"),
+                                 HRUtility.strToDate("2014-07-2"),
                                  2000000, "ENGINEERING");
         Employee e1 = new Employee(1, "Dunni", "Adenuga", 75315956,
-                                   Employee.strToDate("2015-01-20"),
+                                   HRUtility.strToDate("2015-01-20"),
                                    1000000);
         Employee e2 = new Employee(2, "Ebun", "Adenuga", 2569856,
-                                   Employee.strToDate("2005-11-20"),
+                                   HRUtility.strToDate("2005-11-20"),
                                    1000000);
         Employee e3 = new Employee(201, "Bolawa", "Adenuga", 52753156,
-                                   Employee.strToDate("2012-01-20"),
+                                   HRUtility.strToDate("2012-01-20"),
                                    1000000);
         Employee e4 = new Employee(4, "Oyinkan", "Quadri", 89325956,
-                                   Employee.strToDate("2015-01-27"),
+                                   HRUtility.strToDate("2015-01-27"),
                                    1000000);
         Employee e5 = new Employee(0, "Bae", "Bro", 9635956,
-                                   Employee.strToDate("2007-12-20"),
+                                   HRUtility.strToDate("2007-12-20"),
                                    1000000);
         Employee e6 = new Employee(200, "Ruckus", "Jumper", 41555956,
-                                   Employee.strToDate("2000-01-12"),
+                                   HRUtility.strToDate("2000-01-12"),
                                    1000000);
 
         ArrayList<Employee> empList = new ArrayList<>();
@@ -58,11 +58,9 @@ public class HRDBSystem {
         empList.add(e4);
         empList.add(e5);
         empList.add(e6);
-        System.out.println(m1);
-        System.out.println(m2);
-        for (Employee emp : empList) {
-            System.out.println(emp);
-        }
+        HRUtility.displayEmployee(m1);
+        HRUtility.displayEmployee(m2);
+        HRUtility.displayEmployees(empList);
     }
 
 }
