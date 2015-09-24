@@ -16,7 +16,6 @@
 package lab10;
 
 import java.text.ParseException;
-import java.util.ArrayList;
 
 /**
  *
@@ -24,7 +23,7 @@ import java.util.ArrayList;
  */
 public class HRDBSystem {
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException, ManagerException {
 
         Manager m1 = new Manager(0, "Bayo", "Adenuga", 582964000,
                                  HRUtility.strToDate("2013-07-2"),
@@ -51,16 +50,25 @@ public class HRDBSystem {
                                    HRUtility.strToDate("2000-01-12"),
                                    1000000);
 
-        ArrayList<Employee> empList = new ArrayList<>();
-        empList.add(e1);
-        empList.add(e2);
-        empList.add(e3);
-        empList.add(e4);
-        empList.add(e5);
-        empList.add(e6);
-        HRUtility.displayEmployee(m1);
-        HRUtility.displayEmployee(m2);
-        HRUtility.displayEmployees(empList);
+        m1.addEmployee(e1);
+        m1.addEmployee(e2);
+        m1.addEmployee(e3);
+        m2.addEmployee(e4);
+        m2.addEmployee(e5);
+        m2.addEmployee(e6);
+        /*ArrayList<Employee> empList = new ArrayList<>();
+         empList.add(e1);
+         empList.add(e2);
+         empList.add(e3);
+         empList.add(e4);
+         empList.add(e5);
+         empList.add(e6);
+         HRUtility.displayEmployee(m1);
+         HRUtility.displayEmployee(m2);
+         HRUtility.displayEmployees(empList);*/
+        HRUtility.displayManager(m1);
+        System.out.println();
+        HRUtility.displayManager(m2);
     }
 
 }
