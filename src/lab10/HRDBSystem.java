@@ -60,8 +60,8 @@ public class HRDBSystem {
         empList.add(e6);
         System.out.println(m1);
         System.out.println(m2);
-        for (Employee e : empList) {
-            System.out.println(e);
+        for (Employee emp : empList) {
+            System.out.println(emp);
         }
     }
 
