@@ -24,6 +24,7 @@ package lab10;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 
 /**
  * Employee - represents an employee in the database system
@@ -34,7 +35,7 @@ public class Employee {
 
     private static SimpleDateFormat empDateFormat = new SimpleDateFormat(
             "yyyy-MM-dd");
-
+    private static HashSet<Integer> setOfIDs = new HashSet<Integer>();
     private int empID;
     private String firstName;
     private String lastName;
@@ -54,7 +55,13 @@ public class Employee {
      */
     public Employee(int empID, String firstName, String lastName, int ssNum,
                     Date hireDate, double salary) {
-        this.empID = empID;
+        if (setOfIDs.add(empID) == false || empID <= 0) {
+            this.empID = generateID();
+        } else {
+            this.empID = empID;
+            setOfIDs.add(empID);
+        }
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.ssNum = ssNum;
@@ -123,6 +130,18 @@ public class Employee {
 
     public static String dateToStr(Date date) {
         return empDateFormat.format(date);
+    }
+
+    /**
+     *
+     */
+    private static Integer generateID() {
+        int i = 1;
+
+        while (setOfIDs.add(i) == false) {
+            i++;
+        }
+        return i;
     }
 
     /**
