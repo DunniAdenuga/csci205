@@ -46,6 +46,14 @@ public final class HRUtility {
 
     }
 
+    public static void displayManager(Manager m) {
+        System.out.println(
+                "Manager: " + m.getFirstName() + " " + m.getLastName());
+        System.out.println("Department: " + m.getDeptName());
+        System.out.println("# Employees: " + m.getEmpList().size());
+        displayEmployees(m.getEmpList());
+    }
+
     /**
      * Helper method to parse a date string into a date object. This is really
      * here just to show how to deal with an exception that may be thrown in a
