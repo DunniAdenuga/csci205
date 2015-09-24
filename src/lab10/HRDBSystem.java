@@ -52,15 +52,14 @@ public class HRDBSystem {
                                    1000000);
 
         ArrayList<Employee> empList = new ArrayList<>();
-        empList.add(m1);
-        empList.add(m2);
         empList.add(e1);
         empList.add(e2);
         empList.add(e3);
         empList.add(e4);
         empList.add(e5);
         empList.add(e6);
-
+        System.out.println(m1);
+        System.out.println(m2);
         for (Employee e : empList) {
             System.out.println(e);
         }
