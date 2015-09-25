@@ -36,7 +36,7 @@ public class EmployeeTest {
     @Before
     public void setUp() throws ParseException {
         emp = new Employee(0, "Bae", "Bro", 9635956,
-                           Employee.strToDate("2007-12-20"),
+                           HRUtility.strToDate("2007-12-20"),
                            100000);
     }
 
@@ -82,14 +82,14 @@ public class EmployeeTest {
         assertEquals(expResult, result);
 
         Employee e2 = new Employee(0, "Bae", "Bro", 9635956,
-                                   Employee.strToDate("2007-12-20"),
+                                   HRUtility.strToDate("2007-12-20"),
                                    100000);
         expResult = true;
         result = emp.equals(e2);
         assertEquals(expResult, result);
 
         Employee e3 = new Employee(0, "Bae", "Bro", 6395956,
-                                   Employee.strToDate("2007-12-20"),
+                                   HRUtility.strToDate("2007-12-20"),
                                    100000);
         expResult = false;
         result = emp.equals(e3);
