@@ -30,6 +30,11 @@ class ManagerException extends Exception {
     }
 }
 
+/**
+ * Collection of departments
+ *
+ * @author ia005
+ */
 enum DeptType {
     ENGINEERING,
     HR,
@@ -101,10 +106,20 @@ public class Manager extends Employee {
         }
     }
 
+    /**
+     *
+     * @return Employees assigned to Manager
+     */
     public List<Employee> getEmpList() {
         return empList;
     }
 
+    /**
+     * Remove Employee
+     *
+     * @param emp- to be removed
+     * @throws ManagerException
+     */
     public void removeEmployee(Employee emp) throws ManagerException {
         if (empList.contains(emp) == false) {
             throw new ManagerException("Employee does not exist in List");
